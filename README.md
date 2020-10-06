@@ -41,8 +41,8 @@
   
 # Enabling read/write from SQLAlchemy  
 There's a special file that you need to enable your db admin password to work for:  
-1. Open the file in vim: `sudo vim /var/lib/pgsql9/data/pg_hba.conf`
-:warning: :warning: :warning: If that doesn't work: `sudo vim $(psql -c "show hba_file;" | grep pg_hba.conf)`  :warning: :warning: :warning:
+1. Open the file in vim: `sudo vim /var/lib/pgsql9/data/pg_hba.conf`  
+:warning: :warning: :warning: If that doesn't work: `sudo vim $(psql -c "show hba_file;" | grep pg_hba.conf)`  :warning: :warning: :warning:  
 2. Replace all values of `ident` with `md5` in Vim: `:%s/ident/md5/g`  
 3. After changing those lines, run `sudo service postgresql restart`  
 4. Ensure that `sql.env` has the username/password of the superuser you created!  
