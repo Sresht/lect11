@@ -10,9 +10,9 @@
 # Getting PSQL to work with Python  
   
 1. Update yum: `sudo yum update`, and enter yes to all prompts    
-2. Upgrade pip: `sudo /usr/local/bin/pip install --upgrade pip`  
-3. Get psycopg2: `sudo /usr/local/bin/pip install psycopg2-binary`    
-4. Get SQLAlchemy: `sudo /usr/local/bin/pip install Flask-SQLAlchemy==2.1`    
+2. Upgrade pip: `sudo pip install --upgrade pip`  
+3. Get psycopg2: `sudo pip install psycopg2-binary`    
+4. Get SQLAlchemy: `sudo pip install Flask-SQLAlchemy==2.1`    
   
 # Setting up PSQL  
   
