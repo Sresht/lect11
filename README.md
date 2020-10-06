@@ -32,7 +32,8 @@
     a) `psql` (if you already quit out of psql)    
     ## REPLACE THE [VALUES] IN THIS COMMAND! Type this with a new (short) unique password.   
     b) I recommend 4-5 characters - it doesn't have to be very secure. Remember this password!  
-        `create user [some_username_here] superuser password '[some_unique_new_password_here]';`    
+        `create user [some_username_here] superuser password '[some_unique_new_password_here]';` 
+        :warning: this should look like `create user sresht superuser password 'mypass';` :warning:
     c) `\q` to quit out of sql    
 8. `cd` into `lect11` and make a new file called `sql.env` and add `SQL_USER=` and `SQL_PASSWORD=` in it  
 9. Fill in those values with the values you put in 7. b)  
