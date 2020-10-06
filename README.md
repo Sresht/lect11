@@ -50,3 +50,4 @@ There's a special file that you need to enable your db admin password to work fo
   a) `npm run watch`. If prompted to install webpack-cli, type "yes"    
   b) In a new terminal, `python app.py`    
   c) Preview Running Application (might have to clear your cache by doing a hard refresh)    
+6. You should just see the same random number as lect10's socket demo.
