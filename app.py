@@ -21,7 +21,7 @@ database_uri = 'postgresql://{}:{}@localhost/postgres'.format(
 app.config['SQLALCHEMY_DATABASE_URI'] = database_uri
 
 db = flask_sqlalchemy.SQLAlchemy(app)
-db.init_app(app)
+db.app = app
 
 import models 
 
