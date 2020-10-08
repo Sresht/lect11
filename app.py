@@ -36,8 +36,12 @@ def index():
         db.session.add(address)
     db.session.commit()
     
-    return flask.render_template("index.html")
+    retstr = "<html><ol>"
+    for usps_object in db.session.query(models.Usps).all():
+        retstr += "<li>{}</li>\n".format(usps_object.address)
+    retstr += "</ol></html>"
     
+    return retstr
     
 if __name__ == '__main__':
     app.run(
